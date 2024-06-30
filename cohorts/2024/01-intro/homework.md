@@ -13,7 +13,9 @@ curl localhost:9200
 ```
 
 What's the `version.build_hash` value?
-
+```
+42f05b9372a9a4a470db3b52817899b99a76ee73
+```
 
 ## Getting the data
 
