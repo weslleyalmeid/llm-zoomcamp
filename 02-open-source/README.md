@@ -35,6 +35,10 @@ Links:
 * https://saturncloud.io/
 * https://github.com/DataTalksClub/llm-zoomcamp-saturncloud
 
+Google Colab as an alternative:
+
+* [Video](https://www.loom.com/share/591f39e4e231486bbfc3fbd316ec03c5)
+* [Notebook](https://colab.research.google.com/drive/1XmxUZutZXoAEdQZU45EXWPseBX9s2NRd)
 
 ## 2.3 FLAN-T5
 
@@ -137,7 +141,8 @@ For Linux:
 curl -fsSL https://ollama.com/install.sh | sh
 
 ollama start
-ollama serve phi3
+ollama pull phi3
+ollama run phi3
 ```
 
 [Prompt example](prompt.md)
@@ -180,6 +185,7 @@ ollama pull phi3
 * Creating a Docker-Compose file 
 * Re-running the module 1 notebook
 
+* Notebook: [rag-intro.ipynb](rag-intro.ipynb)
 
 ## 2.9 UI for RAG
 
