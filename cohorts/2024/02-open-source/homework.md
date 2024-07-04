@@ -22,6 +22,7 @@ What's the version of ollama client?
 
 To find out, enter the container and execute `ollama` with the `-v` flag.
 
+ollama version is 0.1.48
 
 ## Q2. Downloading an LLM 
 
