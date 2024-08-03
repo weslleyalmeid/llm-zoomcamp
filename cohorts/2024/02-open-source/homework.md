@@ -41,9 +41,34 @@ it in `models/manifests/registry.ollama.ai/library`
 
 What's the content of the file related to gemma?
 
+```
+{"schemaVersion":2,"mediaType":"application/vnd.docker.distribution.manifest.v2+json","config":{"mediaType":"application/vnd.docker.container.image.v1+json","digest":"sha256:887433b89a901c156f7e6944442f3c9e57f3c55d6ed52042cbb7303aea994290","size":483},"layers":[{"mediaType":"application/vnd.ollama.image.model","digest":"sha256:c1864a5eb19305c40519da12cc543519e48a0697ecd30e15d5ac228644957d12","size":1678447520},{"mediaType":"application/vnd.ollama.image.license","digest":"sha256:097a36493f718248845233af1d3fefe7a303f864fae13bc31a3a9704229378ca","size":8433},{"mediaType":"application/vnd.ollama.image.template","digest":"sha256:109037bec39c0becc8221222ae23557559bc594290945a2c4221ab4f303b8871","size":136},{"mediaType":"application/vnd.ollama.image.params","digest":"sha256:22a838ceb7fb22755a3b0ae9b4eadde629d19be1f651f73efb8c6b4e2cd0eea0","size":84}]}
+```
+
 ## Q3. Running the LLM
 
 Test the following prompt: "10 * 10". What's the answer?
+
+```
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:44.426278826Z","message":{"role":"assistant","content":"Sure"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:44.811074034Z","message":{"role":"assistant","content":","},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:45.304956806Z","message":{"role":"assistant","content":" here"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:45.80836482Z","message":{"role":"assistant","content":"'"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:46.382376921Z","message":{"role":"assistant","content":"s"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:46.648610927Z","message":{"role":"assistant","content":" the"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:47.031058427Z","message":{"role":"assistant","content":" model"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:47.811310855Z","message":{"role":"assistant","content":" you"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:48.133616792Z","message":{"role":"assistant","content":" requested"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:48.499980205Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:49.010027752Z","message":{"role":"assistant","content":"\n\n"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:49.494844853Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:49.908025348Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:50.34794447Z","message":{"role":"assistant","content":" *"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:50.643847326Z","message":{"role":"assistant","content":" "},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:50.895918708Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:51.136694444Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"gemma:2b","created_at":"2024-07-09T00:21:53.178016894Z","message":{"role":"assistant","content":""},"done_reason":"stop","done":true,"total_duration":57974588693,"load_duration":36800314956,"prompt_eval_count":33,"prompt_eval_duration":12351303000,"eval_count":24,"eval_duration":8759495000}
+```
 
 ## Q4. Donwloading the weights 
 
