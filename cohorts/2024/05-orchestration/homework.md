@@ -55,6 +55,8 @@ Now mage is running on [http://localhost:6789/](http://localhost:6789/)
 
 What's the version of mage? 
 
+v0.9.72
+
 ## Creating a RAG pipeline
 
 Create a RAG pipeline
@@ -140,7 +142,7 @@ How many documents (chunks) do we have in the output?
 
 * 66
 * 76
-* 86
+* **86**
 * 96
 
 
@@ -244,8 +246,19 @@ Now execute the block.
 
 What's the last document id?
 
-Also note the index name.
+Indexing 86 documents to Elasticsearch index documents_20240818_5818
 
+```js
+{
+    'text': 'Prior to using Ollama models in llm-zoomcamp tasks, you need to have ollama installed on your pc and the relevant LLM model downloaded with ollama from https://www.ollama.com\nTo download ollama for Ubuntu:\n``` curl -fsSL https://ollama.com/install.sh | sh ```\nTo download ollama for Mac and Windows, follow the guide on this link:\nhttps://ollama.com/download/\nOllama a number of open-source LLMs like:\nLlama3\nPhi3\nMistral and Mixtral\nGemma\nQwen\nYou can explore more models on https://ollama.com/library/\nTo download a model in Ollama, simply open command prompt and type:\n``` ollama run model_name ```\ne.g.\n``` ollama run phi3 ```\nIt will automatically download the model and you can use it same way as above for later time.\nTo use Ollama models for inference and llm-zoomcamp tasks, use the following function:\nimport ollama\ndef llm(prompt):\nresponse = ollama.chat(\nmodel="llama3",\nmessages=[{"role": "user", "content": prompt}]\n)\nreturn response[\'message\'][\'content\']\nFor example, we can use it in the following way:\nprompt = "When does the llm-zoomcamp course start?"\nanswer = llm(prompt)\nprint(answer)', 
+    'section': 'Module 1: Introduction',
+    'question': 'OpenSource: How can I use Ollama open-source models locally on my pc without using any API?',
+    'course': 'llm-zoomcamp',
+    'document_id': 'a976d6e7'}
+
+```
+Also note the index name.
+index name: documents_20240818_5818
 
 ## Q5. Testing the retrieval
 
@@ -256,6 +269,7 @@ Let's use the following query: "When is the next cohort?"
 
 What's the ID of the top matching result?
 
+**bf024675**
 
 ## Q6. Reindexing
 
@@ -270,7 +284,7 @@ Let's re-execute the entire pipeline with the updated data.
 
 For the same query "When is the next cohort?". What's the ID of the top matching result?
 
-
+**b6fa77f3**
 
 ## Submit the results
 
