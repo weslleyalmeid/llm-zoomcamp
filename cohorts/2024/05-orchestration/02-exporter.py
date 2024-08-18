@@ -60,7 +60,7 @@ def elasticsearch(documents: List[Dict[str, Union[Dict, List[int], str]]], *args
     print(f'Indexing {count} documents to Elasticsearch index {index_name}')
     for idx, document in enumerate(documents):
         if idx % 100 == 0:
-		        print(f'{idx + 1}/{count}')
+            print(f'{idx + 1}/{count}')
 
         es_client.index(index=index_name, document=document)
 
